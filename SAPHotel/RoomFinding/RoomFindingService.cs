@@ -12,7 +12,6 @@ namespace SAPHotel.RoomFinding
             {
                 for (int day = bookingRequest.startDate; day <= bookingRequest.endDate; day++)
                 {
-                    // We continue to the next room as soon as we find out that a room is booked for the requested day
                     if (!hotel.Rooms[room, day])
                     {
                         if (day == bookingRequest.endDate)
